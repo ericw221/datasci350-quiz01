@@ -1,0 +1,47 @@
+  432  ls
+  433  touch commands.txt
+  434  git checkout main
+  435  touch commands.txt
+  436  git checkout feature-update
+  437  mkdir reports
+  438  cd reports
+  439  touch summary.md
+  440  echo "This document provides a summary of the project updates." >> summary.md
+  441  git add .
+  442  git commit -m "Add reports directory"
+  443  touch {file1,file2,file3}.txt
+  444  ls
+  445  cd ..
+  446  ls
+  447  mv data/raw-data.csv data/input-data.csv
+  448  cd data
+  449  ls
+  450  cd ..
+  451  cd scripts
+  452  mkdir backup
+  453  cp scripts/*.py scripts/backup/
+  454  ls
+  455  cp *.py backup/
+  456  cd backup
+  457  ls
+  458  cd ..
+  459  ls
+  460  cd docs
+  461  ls
+  462  rm -r documentation.md
+  463  ls
+  464  git add .
+  465  git commit -m "Update project files"
+  466  cd ..
+  467  pwd
+  468  touch .gitignore
+  469  echo "temp/\ndataset0?.csv" >> .gitignore
+  470  cat .gitignore
+  471  git add .gitignore && git commit -m "Add .gitignore file"
+  472  git checkout main && git merge feature-update
+  473  history
+  474  history 47 >> commands.txt
+  475  cat commands.txt
+  476  rm -r commands.txt
+  477  touch commands.txt
+  478  history 47
